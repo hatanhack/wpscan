@@ -3,7 +3,7 @@
 module WPScan
   module Finders
     module InterestingFindings
-      # See https://github.com/wpscanteam/wpscan/issues/1593
+      # See https://github.com/hatanhack/wpscan/issues/1593
       class PHPDisabled < CMSScanner::Finders::Finder
         PATTERN = /\$wp_version =/.freeze
 

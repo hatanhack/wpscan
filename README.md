@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://wpscan.com/">
-    <img src="https://raw.githubusercontent.com/wpscanteam/wpscan/gh-pages/images/wpscan_logo.png" alt="WPScan logo">
+    <img src="https://raw.githubusercontent.com/hatanhack/wpscan/gh-pages/images/wpscan_logo.png" alt="WPScan logo">
   </a>
 </p>
 
@@ -15,9 +15,9 @@
 
 <p align="center">
   <a href="https://badge.fury.io/rb/wpscan" target="_blank"><img src="https://badge.fury.io/rb/wpscan.svg"></a>
-  <a href="https://hub.docker.com/r/wpscanteam/wpscan/" target="_blank"><img src="https://img.shields.io/docker/pulls/wpscanteam/wpscan.svg"></a>
-  <a href="https://github.com/wpscanteam/wpscan/actions?query=workflow%3ABuild" target="_blank"><img src="https://github.com/wpscanteam/wpscan/workflows/Build/badge.svg"></a>
-  <a href="https://codeclimate.com/github/wpscanteam/wpscan" target="_blank"><img src="https://codeclimate.com/github/wpscanteam/wpscan/badges/gpa.svg"></a>
+  <a href="https://hub.docker.com/r/hatanhack/wpscan/" target="_blank"><img src="https://img.shields.io/docker/pulls/hatanhack/wpscan.svg"></a>
+  <a href="https://github.com/hatanhack/wpscan/actions?query=workflow%3ABuild" target="_blank"><img src="https://github.com/hatanhack/wpscan/workflows/Build/badge.svg"></a>
+  <a href="https://codeclimate.com/github/hatanhack/wpscan" target="_blank"><img src="https://codeclimate.com/github/hatanhack/wpscan/badges/gpa.svg"></a>
 </p>
 
 # INSTALL
@@ -39,7 +39,7 @@ When using a pentesting distribution (such as Kali Linux), it is recommended to 
 ### In macOSX via Homebrew
 
 ```shell
-brew install wpscanteam/tap/wpscan
+brew install hatanhack/tap/wpscan
 ```
 
 ### From RubyGems
@@ -48,7 +48,7 @@ brew install wpscanteam/tap/wpscan
 gem install wpscan
 ```
 
-On MacOSX, if a ```Gem::FilePermissionError``` is raised due to the Apple's System Integrity Protection (SIP), either install RVM and install wpscan again, or run ```sudo gem install -n /usr/local/bin wpscan``` (see [#1286](https://github.com/wpscanteam/wpscan/issues/1286))
+On MacOSX, if a ```Gem::FilePermissionError``` is raised due to the Apple's System Integrity Protection (SIP), either install RVM and install wpscan again, or run ```sudo gem install -n /usr/local/bin wpscan``` (see [#1286](https://github.com/hatanhack/wpscan/issues/1286))
 
 # Updating
 
@@ -58,25 +58,25 @@ Updating WPScan itself is either done via ```gem update wpscan``` or the package
 
 # Docker
 
-Pull the repo with ```docker pull wpscanteam/wpscan```
+Pull the repo with ```docker pull hatanhack/wpscan```
 
 Enumerating usernames
 
 ```shell
-docker run -it --rm wpscanteam/wpscan --url https://target.tld/ --enumerate u
+docker run -it --rm hatanhack/wpscan --url https://target.tld/ --enumerate u
 ```
 
 Enumerating a range of usernames
 
 ```shell
-docker run -it --rm wpscanteam/wpscan --url https://target.tld/ --enumerate u1-100
+docker run -it --rm hatanhack/wpscan --url https://target.tld/ --enumerate u1-100
 ```
 
 ** replace u1-100 with a range of your choice.
 
 # Usage
 
-Full user documentation can be found here; https://github.com/wpscanteam/wpscan/wiki/WPScan-User-Documentation
+Full user documentation can be found here; https://github.com/hatanhack/wpscan/wiki/WPScan-User-Documentation
 
 ```wpscan --url blog.tld``` This will scan the blog using default options with a good compromise between speed and accuracy. For example, the plugins will be checked passively but their version with a mixed detection mode (passively + aggressively). Potential config backup files will also be checked, along with other interesting findings.
 

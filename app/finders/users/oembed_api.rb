@@ -4,7 +4,7 @@ module WPScan
   module Finders
     module Users
       # Since WP 4.4, the oembed API can disclose a user
-      # https://github.com/wpscanteam/wpscan/issues/1049
+      # https://github.com/hatanhack/wpscan/issues/1049
       class OembedApi < CMSScanner::Finders::Finder
         # @param [ Hash ] opts
         #

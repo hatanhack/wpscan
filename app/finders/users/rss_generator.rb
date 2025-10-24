@@ -22,7 +22,7 @@ module WPScan
                 username = node.text.to_s
 
                 # Ignoring potential username longer than 60 characters and containing accents
-                # as they are considered invalid. See https://github.com/wpscanteam/wpscan/issues/1215
+                # as they are considered invalid. See https://github.com/hatanhack/wpscan/issues/1215
                 next if username.strip.empty? || username.length > 60 || username =~ /[^\x00-\x7F]/
 
                 potential_usernames << username

@@ -53,4 +53,4 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: true
-          tags: wpscanteam/wpscan:${{ env.DOCKER_TAG }}
+          tags: hatanhack/wpscan:${{ env.DOCKER_TAG }}

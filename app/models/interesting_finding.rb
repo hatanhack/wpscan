@@ -14,7 +14,7 @@ module WPScan
 
       # @return [ Hash ]
       def references
-        @references ||= { url: ['https://github.com/wpscanteam/wpscan/issues/422'] }
+        @references ||= { url: ['https://github.com/hatanhack/wpscan/issues/422'] }
       end
     end
 
@@ -127,7 +127,7 @@ module WPScan
         @references ||= {
           url: [
             'https://www.iplocation.net/defend-wordpress-from-ddos',
-            'https://github.com/wpscanteam/wpscan/issues/1299'
+            'https://github.com/hatanhack/wpscan/issues/1299'
           ]
         }
       end
@@ -142,7 +142,7 @@ module WPScan
       # @return [ Hash ]
       def references
         @references ||= {
-          url: ['https://github.com/wpscanteam/wpscan/issues/1593']
+          url: ['https://github.com/hatanhack/wpscan/issues/1593']
         }
       end
     end
